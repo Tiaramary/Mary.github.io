@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+    <title>PunkyBunny Bakeshop</title>
+    <style>
+        /*style.css*/
+
+        
+           
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #0d5a4786;
+    color: black;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(photo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:black;
+}
+
+
+header {
+    background-color:pink;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 10px;
+    color: pink
+    text-decoration: none;
+}
+
+
+.hero {
+    padding: 50px;
+    text-align: center;
+    background-color: pink;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid pink;
+}
+
+
+.contact-form {
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    padding: 70px;
+}
+
+ 
+        
+    </style>
+    <link rel="menu.html" href="menu.html">
+    <link rel="about.html" href="about.html">
+    <link rel="contact.html" href="contact.html">
+</head>
+<body>
+
+    <header>
+        <h1>PunkyBunny Bakeshop</h1>
+        <nav>
+            <a href="INDEX.HTML">Home</a>
+            <a href="about.html">About us</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Freshly Baked Everyday!</h2>
+        <p>Experience the taste of homemade baked goods</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Our products</h2>
+        <div class="gallery-images">
+            <img src="Cake/cake.jfif" alt="cake">
+            <img src="Cake/Bread.jfif" alt="bread">
+            <img src="Cake/Cookies and Cream Cupcakes.jfif" alt="cupcakes">
+            <img src="Cake/Cookies and Cream Cupcakes.jfif" alt="cookies">
+            <img src="Cake/Pantries.jfif" alt="pastry">
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Newsletter Signup</h2>
+        <form id="subscriptionForm" onsubmit="return validateForm()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <label for="confirm password">Confirm password</label>
+            <input type="confirm password" id="confirm password" required>
+            <button type="submit">Subscribe</button>
+            <div id="message"></div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PunkyBunny.All rights reserved</p>
+    </footer>
+</body>
+</style>
+</html>
+
